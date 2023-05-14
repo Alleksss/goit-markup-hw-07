@@ -15,8 +15,81 @@
 <body>
    <header class="header">
         <div class="container h-contein">
+            <a class="logo link linkk" href="./index.html">Web<span class="logo-studio link linkk">Studio</span></a>
+             <!-- Mobile menu-->
+                <div class="mobile">
+                    <button
+                        type="button"
+                        class="js-open-menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                        <svg class="menu-hamburger-icon" width="32" height="22">
+                            <use href="./images/icons.svg#menu-hamburger"></use>
+                        </svg>
+                    </button>
+  
+                    <div class="js-menu-container" id="mobile-menu">
+                        <button class="close-btn js-close-menu" type="button" aria-label="close-icon">
+                            <svg class="close-icon" width="8" height="8">
+                                <use href="./images/icons.svg#close-icon"></use>
+                            </svg>
+                        </button>
+                                                                          
+                        <nav class="nav-mobile">
+                            <ul class="nav-li-mobile">
+                                <li class="item"><a class="header-nav-mob link active-mob" href="./index.html" target="_self">Studio</a></li>
+                                <li class="item"><a class="header-nav-mob link" href="./portfolio.html" target="_self">Portfolio</a></li>
+                                <li class="item"><a class="header-nav-mob link" href="">Contacts</a></li>
+                            </ul>
+                        </nav>
+                        <!-- mob. contacts -->
+                        <address class="mob-contacts">
+                            <ul class="addr-mobile">
+                                <li class="tel">
+                                    <a class="m-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                                <li class="mail">
+                                    <a class="contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            </ul>
+                        </address>
+                        <!-- mob. social media -->
+                        <ul class="socials-links-m nav-li-mobile">
+                            <li class="socials-item">
+                                <a class="socials-link-footer" href="https://www.instagram.com/" 
+                                    target="_blank" rel="noopener noreferrer" aria-label="Instagram icon" >
+                                    <svg class="socials-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="socials-link-footer" href="https://twitter.com/" 
+                                    target="_blank" rel="noopener noreferrer" aria-label="Twitter icon" >
+                                    <svg class="socials-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="socials-link-footer" href="https://www.facebook.com/" 
+                                    target="_blank" rel="noopener noreferrer" aria-label="Facebook icon" >
+                                    <svg class="socials-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="socials-link-footer" href="https://www.linkedin.com/" 
+                                    target="_blank" rel="noopener noreferrer" aria-label="Linkedin icon">
+                                    <svg class="socials-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!------------------------------------------->
             <nav class="nav">
-                <a class="logo link linkk" href="./index.html">Web<span class="logo-studio link linkk">Studio</span></a>
                 <ul class="nav-li">
                     <li class="item"><a class="header-nav link active" href="./index.html" target="_self">Studio</a></li>
                     <li class="item"><a class="header-nav link" href="./portfolio.html" target="_self">Portfolio</a></li>
@@ -88,9 +161,37 @@
         <div class="container">
             <h2 class="h-doing">What are we doing</h2>
             <ul class="list">
-                <li class="li-doing"><img src="./images/monitor.jpg" alt="Monitor PC" width="360" height="300"></li>
-                <li class="li-doing"><img src="./images/phone.jpg" alt="Phone" width="360" height="300"></li>
-                <li class="li-doing"><img src="./images/monphone.jpg" alt="Laptop and Phone" width="360" height="300"></li>
+                <li class="li-doing">
+                    <img 
+                        srcset="./images/monitor.jpg    1x,
+                                ./images/work/pc@2x.jpg 2x "
+                        src="./images/monitor.jpg"
+                        alt="Monitor PC"
+                        width="360"
+                        height="300"
+                        loading="lazy"/>
+                </li>
+                <li class="li-doing">
+                    <img 
+                        srcset="./images/phone.jpg    1x,
+                                ./images/work/phone@2x.jpg 2x "
+                        src="./images/phone.jpg"
+                        alt="Phone"
+                        width="360"
+                        height="300"
+                        loading="lazy"/>
+                </li>
+                <li class="li-doing">
+                    <img 
+                        srcset="./images/monphone.jpg   1x,
+                                ./images/work/pc-phone@2x.jpg 2x "
+                        src="./images/monphone.jpg"
+                        alt="Laptop and Phone"
+                        width="360"
+                        height="300"
+                        loading="lazy"/>
+                       
+                </li>
             </ul>
         </div>
     </section>
@@ -100,11 +201,18 @@
             <h2 class="h-team">Our Team</h2>
             <ul class="list">
                 <li class="list-team">
-                    <img src="./images/mark.jpg" alt="Photo Mark Guerrero" width="264" height="260">
+                    <img 
+                        srcset="./images/mark.jpg 1x,
+                        ./images/team/Mark@2x.jpg 2x"
+                        src="./images/mark.jpg" 
+                        alt="Photo Mark Guerrero" 
+                        width="264" 
+                        height="260"
+                        loading="lazy" />
                     <div class="conteiner-team">
                         <h3 class="h-categ">Mark Guerrero</h3>
                         <p class="text-team">Product Designer</p>
-                        <ul class="socials nav-li">
+                        <ul class="socials nav-li-m">
                             <li class="socials-item">
                                 <a class="socials-link" href="https://www.instagram.com/" 
                                     target="_blank" rel="noopener noreferrer" aria-label="Instagram icon" >
@@ -141,11 +249,17 @@
                     </div>
                 </li>
                 <li class="list-team">
-                    <img src="./images/tom.jpg" alt="Photo Tom Ford" width="264" height="260">
+                    <img srcset="./images/tom.jpg 1x,
+                                ./images/team/Tom@2x.jpg 2x"                    
+                        src="./images/tom.jpg" 
+                        alt="Photo Tom Ford" 
+                        width="264" 
+                        height="260"
+                        loading="lazy" />
                     <div class="conteiner-team">
                         <h3 class="h-categ">Tom Ford</h3>
                         <p class="text-team">Frontend Developer</p>
-                        <ul class="socials nav-li">
+                        <ul class="socials nav-li-m">
                             <li class="socials-item">
                                 <a class="socials-link" href="https://www.instagram.com/" 
                                     target="_blank" rel="noopener noreferrer" aria-label="Instagram icon" >
@@ -182,11 +296,17 @@
                     </div>
                 </li>
                 <li class="list-team">
-                    <img src="./images/camila.jpg" alt="Photo Camila Garcia" width="264" height="260">
+                    <img srcset="./images/camila.jpg 1x,
+                            ./images/team/Camila@2x.jpg 2x"
+                        src="./images/camila.jpg" 
+                        alt="Photo Camila Garcia" 
+                        width="264" 
+                        height="260"
+                        loading="lazy" />
                     <div class="conteiner-team">
                         <h3 class="h-categ">Camila Garcia</h3>
                         <p class="text-team">Marketing</p>
-                        <ul class="socials nav-li">
+                        <ul class="socials nav-li-m">
                             <li class="socials-item">
                                 <a class="socials-link" href="https://www.instagram.com/" 
                                     target="_blank" rel="noopener noreferrer" aria-label="Instagram icon" >
@@ -223,11 +343,17 @@
                     </div>
                 </li>
                 <li class="list-team">
-                    <img src="./images/daniel.jpg" alt="Photo Daniel Wilson" width="264" height="260">
+                    <img srcset="./images/daniel.jpg 1x,
+                            ./images/team/Daniel@2x.jpg 2x"
+                        src="./images/daniel.jpg" 
+                        alt="Photo Daniel Wilson" 
+                        width="264" 
+                        height="260"
+                        loading="lazy" />
                     <div class="conteiner-team">
                         <h3 class="h-categ">Daniel Wilson</h3>
                         <p class="text-team">UI Designer</p>
-                        <ul class="socials nav-li">
+                        <ul class="socials nav-li-m">
                             <li class="socials-item">
                                 <a class="socials-link" href="https://www.instagram.com/" 
                                     target="_blank" rel="noopener noreferrer" aria-label="Instagram icon" >
@@ -325,7 +451,7 @@
             </div>
             <div class="socials-media">
                 <p class="media-footer">Social media</p>
-                <ul class="socials-footer nav-li">
+                <ul class="socials-footer nav-li-f">
                     <li class="socials-item">
                         <a class="socials-link-footer" href="https://www.instagram.com/" 
                             target="_blank" rel="noopener noreferrer" aria-label="Instagram icon" >
@@ -363,8 +489,10 @@
             <div class="subscribe">
                 <p class="scription">Subscribe</p>
                 <form class="subscribe-form" name="subscribe">
-                    <input class="subscribe-input" type="email" name="email" id="email" placeholder=" " required>
-                    <label class="email-label" for="email">E-mail</label>
+                    <div class="enter-mail-form">
+                        <input class="subscribe-input" type="email" name="email" id="email" placeholder=" " required>
+                        <label class="email-label" for="email">E-mail</label>
+                    </div>
                     <button class="subscribe-btn" type="submit">Subscribe
                         <svg class="subscribe-icon" width="24" height="24">
                             <use href="./images/icons.svg#paper-airplane"></use>
@@ -421,5 +549,12 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
