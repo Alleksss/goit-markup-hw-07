@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="lock-scroll">
    <header class="header">
         <div class="container h-contein">
             <a class="logo link linkk" href="./index.html">Web<span class="logo-studio link linkk">Studio</span></a>
@@ -536,7 +536,8 @@
                 </div>
                 <label class="modal-label" for="user_message">Comment</label>
                 <textarea class="modal-form-message" name="user_message" id="user_message" rows="5" placeholder="Text input"></textarea>
-                <label class="modal-form-agreement">I accept the terms and conditions of the&nbsp;<a class="modal-form-checkbox-link" href="">Privacy Policy</a>
+                <label class="modal-form-agreement">
+                    <span>I accept the terms and conditions of the&nbsp;<a class="modal-form-checkbox-link" href="">Privacy Policy</a></span> 
                     <input class="modal-form-checkbox visually-hidden" name="checked" type="checkbox" required>
                     <span class="check-box">
                         <svg class="check-icon" width="10" height="8">
